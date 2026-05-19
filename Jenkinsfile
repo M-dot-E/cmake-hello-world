@@ -25,6 +25,7 @@ pipeline {
 
                             // MODIFICA: pulizia + build directory separata
                             sh '''
+                            export PATH="/opt/homebrew/bin:$PATH"
                             rm -rf build_mac
                             mkdir -p build_mac
 
